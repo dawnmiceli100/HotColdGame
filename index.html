@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hot or Cold Game</title>
+		<link rel="stylesheet" href="main.css" type="text/css"/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="application.js"></script>
+		
+	</head>	
+
+	<body>
+	<!-- Container of all elements on page -->	
+	<div id="container">
+
+		<!-- box to frame the game -->
+		<div id="gameBox">
+
+			<div id="nameOfGame">
+				<h1>
+					<span class="hot">HOT</span> OR <span class="cold">COLD</span>
+				</h1>	
+			</div>
+
+			<h3>I am hiding a number between 1 and 100</h3>
+
+			<div id = "numberBox">
+				<h4 id="questionMark">?</h4>
+			</div>
+
+			<p>Enter your guess in the box below and click submit.</p>
+
+			<input id="userGuess" type="text" autocomplete="off" name="userGuess">
+
+			<div id="gameButtons">
+
+				<button id="submit">Submit Your Guess</button>
+
+				<button id="newGame">Start New Game</button>
+			</div>	
+
+			<p id="errorMessage" class="hidden alert">Error: You must enter a number between 1 and 100.</p>
+
+			<p id ="winnerMessage" class="hidden alert">Congratulations! You have guessed the correct number!</p>
+
+			<p id ="hotMessage" class="hidden hot">You are hot!</p>
+
+			<p id="coldMessage" class="hidden cold">You are cold!</p>
+
+			<p id="warmMessage" class="hidden warm">You are warm!</p>
+
+
+			<p id="guessList"></p>
+
+		</div>
+		<!-- End of Game Box -->	
+				
+	</div>
+	<!-- End of Container -->
+	</body>
+
+</html>	
